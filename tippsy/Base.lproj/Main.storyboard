@@ -12,6 +12,12 @@
         <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <tapGestureRecognizer id="arn-GG-u0f">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="Aai-nZ-18y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tippsy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -67,6 +73,9 @@
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="SLD-95-AWD"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zp-ld-f2U">
                                 <rect key="frame" x="75" y="254" width="243" height="8"/>
@@ -98,12 +107,6 @@
                         <outlet property="totalLabel" destination="iFL-3e-hX2" id="7bd-fh-WEb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="arn-GG-u0f">
-                    <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="Aai-nZ-18y"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="964" y="130.88455772113943"/>
         </scene>
