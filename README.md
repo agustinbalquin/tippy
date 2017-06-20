@@ -1,10 +1,10 @@
-# Project 1 - *Name of App Here*
+# Project 1 - *tippsy*
 
-**Name of your app** is a tip calculator application for iOS.
+**tipsy** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Agustin Balquin**
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![demo]<img src='http://imgur.com/nIScS0G' title='Basic Func Video Walkthrough' width='' alt='Video Walkthrough' />
+![Basic Func Walkthrough](http://imgur.com/nIScS0G)
 
 ## Notes
 
