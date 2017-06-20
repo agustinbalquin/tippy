@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalLabel: UILabel!
     
+    @IBOutlet weak var tipControl: UISegmentedControl!
+
     
     
     
@@ -31,13 +33,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    @IBAction func onTap(_ sender: UITextField) {
-        view.endEditing(true)
-        
+
+    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+            view.endEditing(true)
     }
     
+    
+    @IBAction func calculateTip(_ sender: UITextField) {
+        
+        let tipPercentages = [0.15,0.2,0.25]
+        let bill = Double(textField.text!) ?? 0
+        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        let total = bill + tip
+        
+        tipAmountLabel.text = String(format: "$%f" , tip)
+        totalLabel.text = String(format: "$%f" , total)
+        
+        
+        
+    }
     
 
 }
